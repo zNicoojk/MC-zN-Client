@@ -53,6 +53,8 @@ Para publicar una actualización del launcher, sigue las instrucciones del [repo
 
 El sitio se aloja desde este repositorio con GitHub Pages. En **Settings → Pages**, selecciona **GitHub Actions** como origen. El workflow de `.github/workflows/deploy-pages.yml` publica los archivos de `site/` al subir cambios a `main` o `master`; los nuevos instaladores se obtienen directamente de las Releases del repositorio del cliente.
 
+Las versiones y sus instaladores se actualizan desde GitHub Releases. Para cambiar los textos, las funciones descritas o el diseño de la página, edita los archivos de `site/` en este repositorio y sube los cambios a `main`; GitHub Actions publicará la nueva página automáticamente.
+
 ## Sobre el proyecto
 
 zN Client es independiente y no está afiliado, aprobado ni patrocinado por Mojang Studios o Microsoft. Minecraft es una marca de Mojang Studios. Revisa la licencia y los avisos del [repositorio del cliente](https://github.com/zNicoojk/zN-Client) antes de redistribuir el proyecto.
