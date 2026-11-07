@@ -29,9 +29,6 @@ jobs:
       - name: Configure GitHub Pages
         uses: actions/configure-pages@v5
 
-      - name: Connect page to this repository
-        run: printf 'window.ZNCLIENT_REPO = "%s";\n' "$GITHUB_REPOSITORY" > site/repo-config.js
-
       - name: Upload website
         uses: actions/upload-pages-artifact@v3
         with:

@@ -15,14 +15,23 @@
     downloadArea.append(text);
   };
 
-  const makeDownloadLink = (asset, primary) => {
+  const formatFileSize = (bytes) => {
+    if (!Number.isFinite(bytes) || bytes <= 0) return "";
+    return `${(bytes / (1024 * 1024)).toFixed(0)} MB`;
+  };
+
+  const makeDownloadLink = (asset) => {
     const link = document.createElement("a");
-    link.className = `download-button${primary ? "" : " secondary"}`;
+    link.className = "download-button";
     link.href = asset.browser_download_url;
     link.target = "_blank";
     link.rel = "noreferrer";
-    link.setAttribute("download", "");
-    link.textContent = `↓  ${asset.name}`;
+    const label = document.createElement("span");
+    label.textContent = "Descargar instalador para Windows";
+    const details = document.createElement("span");
+    details.className = "download-details";
+    details.textContent = [asset.name, formatFileSize(asset.size)].filter(Boolean).join(" · ");
+    link.append(label, details);
     return link;
   };
 
@@ -49,11 +58,14 @@
       return response.json();
     })
     .then((releases) => {
+      if (!Array.isArray(releases)) {
+        throw new Error("GitHub devolvió una respuesta de versiones no válida.");
+      }
       const release = releases.find((item) => !item.draft && !item.prerelease);
       if (!release) {
         versionElement.textContent = "Todavía no hay versiones";
         dateElement.textContent = "";
-        showError("Publica una Release en GitHub y aparecerá aquí.");
+        showError("Todavía no hay una versión estable publicada.");
         return;
       }
 
@@ -65,14 +77,13 @@
       notesLink.hidden = false;
       downloadArea.replaceChildren();
 
-      if (release.assets.length === 0) {
-        showError("Esta versión no tiene archivos adjuntos para descargar.");
+      const installers = (release.assets || []).filter((asset) => /\.exe$/i.test(asset.name));
+      if (installers.length === 0) {
+        showError("No se encontró el instalador de Windows en esta versión. Revisa sus archivos en GitHub.");
         return;
       }
 
-      release.assets.forEach((asset, index) => {
-        downloadArea.append(makeDownloadLink(asset, index === 0));
-      });
+      downloadArea.append(...installers.map(makeDownloadLink));
     })
     .catch((error) => {
       versionElement.textContent = "No se pudo cargar la versión";

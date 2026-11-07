@@ -1,1 +1,1 @@
-window.ZNCLIENT_REPO = "";
+window.ZNCLIENT_REPO = "zNicoojk/zN-Client";

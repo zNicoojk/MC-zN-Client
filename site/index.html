@@ -4,9 +4,10 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="theme-color" content="#090d18">
-    <meta name="description" content="Descarga la versión más reciente de ZNClient.">
-    <title>ZNClient — Descargas</title>
+    <meta name="description" content="Descarga zN Client para Minecraft Java Edition. Launcher para Windows con mods, HUD y actualizaciones automáticas.">
+    <title>zN Client — Minecraft, a tu manera</title>
     <link rel="stylesheet" href="./styles.css">
+    <link rel="icon" type="image/png" href="./assets/znclient.png">
     <script src="./repo-config.js"></script>
     <script src="./app.js" defer></script>
   </head>
@@ -14,65 +15,124 @@
     <div class="page-shell">
       <header class="topbar">
         <a class="brand" href="#" aria-label="ZNClient, inicio">
-          <span class="brand-mark" aria-hidden="true">ZN</span>
-          <span>ZN<span class="brand-light">CLIENT</span></span>
+          <img class="brand-logo" src="./assets/znclient.png" alt="">
+          <span>zN <span class="brand-light">CLIENT</span></span>
         </a>
-        <a class="github-link" id="github-link" href="#" target="_blank" rel="noreferrer">
-          Ver en GitHub <span aria-hidden="true">↗</span>
-        </a>
+        <nav class="top-links" aria-label="Enlaces principales">
+          <a class="github-link" href="#features">Funciones</a>
+          <a class="github-link" id="github-link" href="#" target="_blank" rel="noreferrer">
+            Código fuente <span aria-hidden="true">↗</span>
+          </a>
+        </nav>
       </header>
 
       <main>
         <section class="hero" aria-labelledby="hero-title">
-          <div class="eyebrow"><span class="status-dot"></span> CENTRO DE DESCARGAS</div>
-          <h1 id="hero-title">Tu próxima versión,<br><span>siempre a mano.</span></h1>
+          <div class="eyebrow"><span class="status-dot"></span> MINECRAFT JAVA EDITION · WINDOWS</div>
+          <h1 id="hero-title">Minecraft,<br><span>a tu manera.</span></h1>
           <p class="hero-copy">
-            Descarga ZNClient desde aquí. Cuando publiques una nueva versión en GitHub,
-            aparecerá automáticamente en esta página.
+            Juega, organiza tus instalaciones y personaliza tu HUD desde un solo launcher.
+            Menos vueltas para entrar al juego; más formas de hacerlo tuyo.
           </p>
 
-          <article class="release-card" aria-live="polite">
+          <article class="release-card" id="latest-release" aria-live="polite">
             <div class="release-heading">
               <div>
-                <p class="card-label">VERSIÓN MÁS RECIENTE</p>
+                <p class="card-label">ÚLTIMA VERSIÓN · WINDOWS 64 BITS</p>
                 <h2 id="latest-version">Buscando versión...</h2>
               </div>
-              <span class="latest-badge">LATEST</span>
+              <span class="latest-badge">ESTABLE</span>
             </div>
             <p class="release-date" id="release-date"></p>
             <div class="download-area" id="download-area">
               <span class="loader" aria-hidden="true"></span>
-              <span>Conectando con GitHub...</span>
+              <span>Buscando el instalador en GitHub...</span>
             </div>
             <a class="release-notes" id="release-notes" href="#" target="_blank" rel="noreferrer" hidden>
-              Ver notas de esta versión <span aria-hidden="true">→</span>
+              Ver notas y todos los archivos de la versión <span aria-hidden="true">→</span>
             </a>
           </article>
-          <p class="auto-note"><span aria-hidden="true">↻</span> Actualizaciones sincronizadas con GitHub Releases</p>
+          <p class="auto-note"><span aria-hidden="true">↻</span> Descargas verificadas directamente desde GitHub Releases</p>
         </section>
 
-        <section class="how-it-works" aria-label="Cómo funciona">
+        <section class="features-section" id="features" aria-labelledby="features-title">
+          <div class="section-heading">
+            <p class="section-kicker">HECHO PARA JUGAR</p>
+            <h2 id="features-title">Tu juego. Tus ajustes.</h2>
+            <p>Un launcher ligero y herramientas dentro del juego para que personalices la experiencia a tu gusto.</p>
+          </div>
+          <div class="feature-grid">
+            <article class="feature-card">
+              <span class="feature-icon" aria-hidden="true">⌕</span>
+              <h3>Zoom</h3>
+              <p>Acerca la vista con transición animada y configura el control, la ampliación y el modo de activación.</p>
+            </article>
+            <article class="feature-card">
+              <span class="feature-icon" aria-hidden="true">▥</span>
+              <h3>HUD personalizable</h3>
+              <p>Muestra FPS, ping y coordenadas. Ajusta posición, tamaño y estilo, y arrastra los indicadores en pantalla.</p>
+            </article>
+            <article class="feature-card">
+              <span class="feature-icon" aria-hidden="true">✦</span>
+              <h3>Nametags</h3>
+              <p>Personaliza las etiquetas de jugadores y criaturas, su fondo, opacidad, sombra y colores.</p>
+            </article>
+            <article class="feature-card">
+              <span class="feature-icon" aria-hidden="true">≡</span>
+              <h3>Lista TAB</h3>
+              <p>Destaca tu nombre o jugadores elegidos, cambia sus colores y ajusta cuántos aparecen en la lista.</p>
+            </article>
+            <article class="feature-card">
+              <span class="feature-icon" aria-hidden="true">◈</span>
+              <h3>Viewmodel</h3>
+              <p>Personaliza la posición, escala y rotación de los objetos que ves en primera persona.</p>
+            </article>
+            <article class="feature-card">
+              <span class="feature-icon" aria-hidden="true">⇧</span>
+              <h3>Un launcher, todo organizado</h3>
+              <p>Administra perfiles, instalaciones, memoria, mods y archivos del juego por versión desde una sola aplicación.</p>
+            </article>
+          </div>
+        </section>
+
+        <section class="compatibility" aria-labelledby="compatibility-title">
+          <div>
+            <p class="section-kicker">COMPATIBILIDAD ACTUAL</p>
+            <h2 id="compatibility-title">Listo para tus versiones.</h2>
+            <p>El mod de zN Client se prepara específicamente para cada versión compatible.</p>
+          </div>
+          <div class="version-list" aria-label="Versiones compatibles de Minecraft">
+            <span>Minecraft 26.1</span>
+            <span>Minecraft 26.2</span>
+            <span>Minecraft 26.3</span>
+          </div>
+          <p class="compatibility-note">Windows 10/11 de 64 bits · Runtime Java incluido · Pulsa <kbd>Shift derecho</kbd> dentro del juego para abrir el menú de módulos.</p>
+        </section>
+
+        <section class="how-it-works" aria-label="Cómo se actualizan las descargas">
           <div class="step">
             <span class="step-number">01</span>
-            <div><h3>Publica en GitHub</h3><p>Crea una Release y adjunta los archivos instalables de tu versión.</p></div>
+            <div><h3>Nueva versión</h3><p>Se publica el instalador en GitHub Releases del proyecto zN Client.</p></div>
           </div>
           <div class="step">
             <span class="step-number">02</span>
-            <div><h3>Se actualiza sola</h3><p>La página consulta las publicaciones de GitHub y muestra la última versión.</p></div>
+            <div><h3>La página se sincroniza</h3><p>Esta página detecta la última versión estable y su instalador de Windows.</p></div>
           </div>
           <div class="step">
             <span class="step-number">03</span>
-            <div><h3>Descarga y listo</h3><p>Tus usuarios descargan los archivos directamente desde GitHub.</p></div>
+            <div><h3>Descarga directa</h3><p>El archivo se descarga desde GitHub. El launcher también puede actualizarse desde Releases.</p></div>
           </div>
         </section>
+
+        <p class="disclaimer">zN Client es un proyecto independiente y no está afiliado ni patrocinado por Mojang Studios o Microsoft. Necesitas Minecraft: Java Edition para jugar en servidores premium y Realms.</p>
       </main>
 
       <footer>
         <a class="brand footer-brand" href="#" aria-label="ZNClient, inicio">
-          <span class="brand-mark" aria-hidden="true">ZN</span>
-          <span>ZN<span class="brand-light">CLIENT</span></span>
+          <img class="brand-logo" src="./assets/znclient.png" alt="">
+          <span>zN <span class="brand-light">CLIENT</span></span>
         </a>
-        <span>Desarrollado con <a id="footer-github-link" href="#" target="_blank" rel="noreferrer">GitHub Releases</a></span>
+        <span>Descargas desde <a id="footer-github-link" href="#" target="_blank" rel="noreferrer">GitHub Releases</a></span>
       </footer>
     </div>
   </body>
