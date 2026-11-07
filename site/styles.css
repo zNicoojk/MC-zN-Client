@@ -379,3 +379,74 @@ footer { display: flex; min-height: 78px; align-items: center; justify-content: 
 @media (prefers-reduced-motion: reduce) {
   *, *::before, *::after { scroll-behavior: auto !important; animation-duration: .01ms !important; animation-iteration-count: 1 !important; transition-duration: .01ms !important; }
 }
+
+@media (min-width: 1000px) {
+  .page-shell { width: min(100% - 88px, 1240px); }
+  .topbar { min-height: 90px; }
+  .top-links { gap: 35px; }
+  .top-links > a { font-size: 13px; }
+  .hero { min-height: 660px; gap: 56px; padding: 82px 0 100px; }
+  h1 { font-size: clamp(62px, 6.4vw, 84px); }
+  .hero-description { max-width: 540px; font-size: 17px; }
+  .hero-art { transform: scale(1.08); }
+  .button { min-height: 54px; padding-right: 22px; padding-left: 22px; font-size: 13px; }
+  .hero-facts { gap: 21px; font-size: 11px; }
+
+  .download-section, .features-section, .install-section, .update-section, .faq-section, .legal-hub {
+    margin-top: 50px;
+    padding: 46px 38px 38px;
+    border: 1px solid rgba(224, 255, 232, .08);
+    border-radius: 16px;
+    background: linear-gradient(135deg, rgba(20, 32, 25, .48), rgba(11, 17, 14, .35));
+  }
+
+  .download-section { padding-top: 40px; }
+  .section-intro h2, .compatibility h2, .update-heading h2 { font-size: clamp(32px, 3.2vw, 42px); }
+  .section-intro > p { max-width: 380px; font-size: 14px; }
+  .release-main { gap: 23px; padding: 34px 36px; }
+  .release-info h3 { font-size: 27px; }
+  .download-area { font-size: 14px; }
+  .download-button { min-height: 52px; padding: 0 18px; font-size: 13px; }
+  .features-section { padding-top: 42px; }
+  .feature-grid { gap: 16px; }
+  .feature-card { min-height: 218px; padding: 25px 24px 40px; }
+  .feature-icon { width: 40px; height: 40px; margin-bottom: 20px; font-size: 20px; }
+  .feature-card h3 { font-size: 16px; }
+  .feature-card p { max-width: 320px; font-size: 13px; }
+  .feature-index { font-size: 8px; }
+  .compatibility { margin-top: 50px; padding: 36px 38px 26px; }
+  .compatibility-copy > p:last-child { font-size: 13px; }
+  .version-list span { min-width: 180px; padding: 11px 14px; font-size: 12px; }
+  .compatibility-meta { padding-top: 22px; font-size: 9px; }
+  .install-section, .faq-section, .legal-hub { padding-top: 42px; }
+  .install-grid { gap: 16px; }
+  .install-card { min-height: 205px; padding: 25px; }
+  .install-number { font-size: 13px; }
+  .install-card h3 { font-size: 15px; }
+  .install-card p { font-size: 12px; }
+  .install-note { font-size: 11px; }
+  .update-section { grid-template-columns: .9fr 1.1fr; gap: 72px; padding-top: 46px; }
+  .update-heading > p:last-child { font-size: 14px; }
+  .step { gap: 23px; padding: 23px 0; }
+  .step-number { font-size: 13px; }
+  .step h3 { font-size: 14px; }
+  .step p { font-size: 12px; }
+  .faq-item summary { padding-top: 20px; padding-bottom: 20px; font-size: 14px; }
+  .faq-item summary::after { top: 18px; font-size: 22px; }
+  .faq-item p { font-size: 12px; }
+  .legal-hub { padding-bottom: 42px; }
+  .legal-jump-links { gap: 16px; margin-bottom: 40px; }
+  .legal-jump-card { min-height: 102px; padding: 21px; }
+  .legal-jump-icon { width: 44px; height: 44px; font-size: 22px; }
+  .legal-jump-card strong { font-size: 14px; }
+  .legal-jump-card small { font-size: 11px; }
+  .legal-document { margin-top: 28px; padding: 32px 36px; }
+  .legal-document-heading { padding-bottom: 25px; }
+  .legal-document-heading h3 { font-size: 31px; }
+  .legal-document-heading p:last-child, .legal-top-link { font-size: 11px; }
+  .legal-item summary { padding-top: 18px; padding-bottom: 18px; font-size: 13px; }
+  .legal-item summary::after { top: 15px; font-size: 21px; }
+  .legal-item-content { padding-bottom: 18px; }
+  .legal-item-content p, .legal-item-content li { font-size: 12px; }
+  .legal-note { font-size: 10px; }
+}
