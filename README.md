@@ -43,7 +43,7 @@ La contraseña de Microsoft no se almacena. Si eliges guardar una cuenta, su tok
 
 Consulta la [política de privacidad](https://github.com/zNicoojk/zN-Client/blob/main/PRIVACY.md) y el [código fuente del launcher](https://github.com/zNicoojk/zN-Client).
 
-La web tiene además su propia [política de privacidad](./site/privacy.html), que explica las conexiones a GitHub y Google Fonts al visitar la página. Los [términos y condiciones](./site/terms.html) describen el uso del sitio y enlazan a la licencia aplicable al software.
+La web incluye su propia política de privacidad, que explica las conexiones a GitHub y Google Fonts al visitar la página, y los términos y condiciones para usar el sitio y el software. Ambos documentos están dentro de la [página principal](https://znicoojk.github.io/MC-zN-Client/#legal-hub); sus botones conducen a cada sección sin abrir otra página.
 
 ## Descargas y actualizaciones
 
@@ -57,7 +57,7 @@ El sitio se aloja desde este repositorio con GitHub Pages. En **Settings → Pag
 
 Las versiones y sus instaladores se actualizan desde GitHub Releases. Para cambiar los textos, las funciones descritas o el diseño de la página, edita los archivos de `site/` en este repositorio y sube los cambios a `main`; GitHub Actions publicará la nueva página automáticamente.
 
-La página incluye una guía de instalación, preguntas frecuentes y documentos separados para [términos](./site/terms.html) y [privacidad de la web](./site/privacy.html). El soporte se ofrece mediante GitHub Issues; no publiques contraseñas, tokens ni registros sin revisarlos antes.
+La página incluye una guía de instalación, preguntas frecuentes y secciones integradas de términos y privacidad, accesibles desde los enlaces de la misma página. El soporte se ofrece mediante GitHub Issues; no publiques contraseñas, tokens ni registros sin revisarlos antes.
 
 ## Sobre el proyecto
 

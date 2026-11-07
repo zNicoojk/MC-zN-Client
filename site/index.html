@@ -13,10 +13,10 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Space+Grotesk:wght@400;500;600;700&display=swap">
-    <link rel="stylesheet" href="./styles.css?v=3">
+    <link rel="stylesheet" href="./styles.css?v=4">
     <link rel="icon" type="image/png" href="./assets/znclient.png">
     <script src="./repo-config.js"></script>
-    <script src="./app.js?v=3" defer></script>
+    <script src="./app.js?v=4" defer></script>
   </head>
   <body>
     <div class="ambient ambient-one" aria-hidden="true"></div>
@@ -251,7 +251,7 @@
             </details>
             <details class="faq-item">
               <summary>¿Se guardan mis credenciales de Microsoft?</summary>
-              <p>La contraseña no se guarda en el launcher. Si eliges recordar una cuenta, el token de renovación se cifra con el almacenamiento seguro de Windows. Consulta la <a class="inline-link" href="./privacy.html">política de privacidad</a> para más detalles y servicios de terceros.</p>
+              <p>La contraseña no se guarda en el launcher. Si eliges recordar una cuenta, el token de renovación se cifra con el almacenamiento seguro de Windows. Consulta la <a class="inline-link" href="#privacy">política de privacidad</a> para más detalles y servicios de terceros.</p>
             </details>
             <details class="faq-item">
               <summary>¿Puedo usar cualquier mod externo?</summary>
@@ -268,6 +268,163 @@
           </div>
         </section>
 
+        <section class="legal-hub" aria-labelledby="legal-hub-title">
+          <div class="section-intro">
+            <div>
+              <p class="section-kicker">INFORMACIÓN IMPORTANTE</p>
+              <h2 id="legal-hub-title">Todo claro, en un mismo lugar.</h2>
+            </div>
+            <p>Consulta cómo se usa el sitio y qué debes saber antes de instalar el launcher.</p>
+          </div>
+          <nav class="legal-jump-links" aria-label="Documentos del sitio">
+            <a class="legal-jump-card terms-jump" href="#terms">
+              <span class="legal-jump-icon" aria-hidden="true">§</span>
+              <span><strong>Términos y condiciones</strong><small>Uso del sitio, del software y de sus servicios.</small></span>
+              <span class="legal-jump-arrow" aria-hidden="true">↓</span>
+            </a>
+            <a class="legal-jump-card privacy-jump" href="#privacy">
+              <span class="legal-jump-icon" aria-hidden="true">◉</span>
+              <span><strong>Privacidad</strong><small>Datos locales, conexiones y proveedores externos.</small></span>
+              <span class="legal-jump-arrow" aria-hidden="true">↓</span>
+            </a>
+          </nav>
+
+          <section class="legal-document terms-document" id="terms" aria-labelledby="terms-title">
+            <div class="legal-document-heading">
+              <div>
+                <p class="section-kicker">USO RESPONSABLE</p>
+                <h3 id="terms-title">Términos y condiciones</h3>
+                <p>Última actualización: 7 de noviembre de 2026</p>
+              </div>
+              <a class="legal-top-link" href="#legal-hub-title">Volver arriba ↑</a>
+            </div>
+            <div class="legal-accordion">
+              <details class="legal-item" open>
+                <summary>1. Aceptación y alcance</summary>
+                <div class="legal-item-content">
+                  <p>Al acceder a este sitio o utilizar zN Client, aceptas estos términos en la medida permitida por la legislación aplicable. Si no estás de acuerdo, no uses el sitio ni el software. Si eres menor de edad, utiliza el software con la participación y autorización de tu padre, madre o tutor cuando corresponda.</p>
+                  <p>Estos términos describen el sitio de descargas y aspectos generales del uso del launcher. No sustituyen los acuerdos, licencias o condiciones que puedan aplicar a Minecraft, Microsoft, GitHub, Fabric, Discord u otros servicios.</p>
+                </div>
+              </details>
+              <details class="legal-item">
+                <summary>2. El sitio y el software</summary>
+                <div class="legal-item-content">
+                  <p>El sitio ofrece información sobre zN Client y enlaza las versiones publicadas en GitHub Releases. El launcher es una aplicación independiente para Windows y Minecraft: Java Edition. Sus funciones, requisitos y compatibilidad pueden cambiar entre versiones; consulta las notas de cada Release antes de instalar una actualización.</p>
+                  <p>La información de esta página es general. Comprueba los requisitos de la versión del launcher y del juego que vayas a utilizar.</p>
+                </div>
+              </details>
+              <details class="legal-item">
+                <summary>3. Licencia y uso permitido</summary>
+                <div class="legal-item-content">
+                  <p>El código y los archivos de zN Client se rigen por la licencia y los avisos incluidos en el <a href="https://github.com/zNicoojk/zN-Client" target="_blank" rel="noopener noreferrer">repositorio del proyecto</a>. Estos términos del sitio no conceden derechos adicionales sobre el software, Minecraft ni sus marcas. Revisa la licencia del repositorio antes de copiar, modificar o redistribuir el launcher.</p>
+                  <p>Usa el software de forma lícita, no alteres su funcionamiento para perjudicar a otras personas y respeta las reglas de las cuentas, los servidores y los servicios que utilices. Los perfiles locales solo deben usarse donde el operador admita expresamente ese tipo de perfil.</p>
+                </div>
+              </details>
+              <details class="legal-item">
+                <summary>4. Cuentas y servicios externos</summary>
+                <div class="legal-item-content">
+                  <p>El inicio de sesión de Microsoft y el acceso a Minecraft dependen de los servicios y condiciones de Microsoft, Xbox y Minecraft. zN Client no es un proveedor de cuentas ni sustituye una licencia de Minecraft: Java Edition. No compartas tu contraseña, tokens ni archivos de sesión.</p>
+                  <p>El launcher y el sitio pueden conectarse con terceros para las funciones solicitadas, como obtener archivos, versiones o actualizaciones. Cada proveedor opera bajo sus propios términos y políticas de privacidad; zN Client no controla sus servicios.</p>
+                </div>
+              </details>
+              <details class="legal-item">
+                <summary>5. Descargas y seguridad</summary>
+                <div class="legal-item-content">
+                  <p>El enlace apunta al archivo publicado en GitHub Releases. Antes de ejecutar un instalador, comprueba que el nombre y la versión coincidan con lo que esperas y que el enlace provenga del repositorio <a href="https://github.com/zNicoojk/zN-Client/releases" target="_blank" rel="noopener noreferrer">zNicoojk/zN-Client</a>. Mantén Windows y tu software de seguridad actualizados.</p>
+                  <p>La página no afirma que cada archivo esté libre de errores, sea compatible con todo equipo ni funcione con cualquier mod, servidor o versión. Si algo parece inesperado, no ejecutes el archivo y consulta el repositorio o abre una incidencia.</p>
+                </div>
+              </details>
+              <details class="legal-item">
+                <summary>6. Disponibilidad y garantías</summary>
+                <div class="legal-item-content">
+                  <p>El sitio, los enlaces y las descargas pueden cambiar, interrumpirse o dejar de estar disponibles, incluso por fallos de GitHub u otros proveedores. Se ofrecen tal cual y según disponibilidad, sin prometer funcionamiento ininterrumpido, compatibilidad universal ni que se corrija cada error. Nada de estos términos limita derechos o garantías que no puedan excluirse por ley.</p>
+                </div>
+              </details>
+              <details class="legal-item">
+                <summary>7. Responsabilidad</summary>
+                <div class="legal-item-content">
+                  <p>En la medida permitida por la ley, el publicador no será responsable por daños indirectos derivados del uso o la imposibilidad de usar el sitio o el launcher, por servicios de terceros ni por modificaciones o mods que instales. Eres responsable de mantener copias de seguridad de tus mundos y archivos importantes. Esta sección no excluye responsabilidad cuando hacerlo esté prohibido por la legislación aplicable.</p>
+                </div>
+              </details>
+              <details class="legal-item">
+                <summary>8. Cambios y contacto</summary>
+                <div class="legal-item-content">
+                  <p>Estos términos pueden actualizarse junto con el sitio o el proyecto. La fecha indicada refleja la revisión publicada; el uso posterior a una actualización implica aceptar los términos revisados en la medida permitida por la ley.</p>
+                  <p>Para preguntas o problemas, abre una <a href="https://github.com/zNicoojk/zN-Client/issues" target="_blank" rel="noopener noreferrer">incidencia en GitHub</a>. No publiques datos privados, contraseñas ni tokens. Para el tratamiento de datos, consulta la <a href="#privacy">política de privacidad</a>.</p>
+                </div>
+              </details>
+            </div>
+            <p class="legal-note">Esta información general no constituye asesoramiento legal.</p>
+          </section>
+
+          <section class="legal-document privacy-document" id="privacy" aria-labelledby="privacy-title">
+            <div class="legal-document-heading">
+              <div>
+                <p class="section-kicker">TRANSPARENCIA</p>
+                <h3 id="privacy-title">Política de privacidad</h3>
+                <p>Última actualización: 7 de noviembre de 2026</p>
+              </div>
+              <a class="legal-top-link" href="#legal-hub-title">Volver arriba ↑</a>
+            </div>
+            <div class="legal-accordion">
+              <details class="legal-item" open>
+                <summary>1. Al visitar este sitio</summary>
+                <div class="legal-item-content">
+                  <p>Este sitio es una página estática publicada mediante GitHub Pages. No incluye formularios de cuenta, publicidad, cookies propias, almacenamiento local propio ni herramientas de analítica configuradas por zN Client.</p>
+                  <p>Para mostrar la descarga más reciente, el navegador consulta la API pública de GitHub Releases. Esa solicitud puede transmitir a GitHub datos técnicos de conexión, como la dirección IP. Los botones de descarga y soporte también te llevan a GitHub.</p>
+                  <p>La tipografía se carga desde Google Fonts. Al solicitar esos archivos, el navegador se conecta a Google y puede transmitir datos técnicos de conexión conforme a la política de ese proveedor.</p>
+                </div>
+              </details>
+              <details class="legal-item">
+                <summary>2. Proveedores externos</summary>
+                <div class="legal-item-content">
+                  <p>GitHub aloja el sitio, entrega las descargas y ofrece la API de versiones; Google Fonts proporciona las tipografías. Estos proveedores pueden procesar datos técnicos necesarios para responder a las solicitudes, operar y proteger sus servicios conforme a sus políticas. El mantenedor de zN Client no recibe esos datos de conexión mediante la página ni controla los registros internos de los proveedores.</p>
+                  <ul>
+                    <li><a href="https://docs.github.com/site-policy/privacy-policies/github-privacy-statement" target="_blank" rel="noopener noreferrer">Política de privacidad de GitHub</a></li>
+                    <li><a href="https://policies.google.com/privacy" target="_blank" rel="noopener noreferrer">Política de privacidad de Google</a></li>
+                  </ul>
+                  <p>Al salir de este sitio, se aplican los avisos y condiciones del sitio de destino.</p>
+                </div>
+              </details>
+              <details class="legal-item">
+                <summary>3. Aplicación zN Client</summary>
+                <div class="legal-item-content">
+                  <p>El launcher guarda en tu equipo las preferencias, archivos del juego, runtimes, mods, mundos, capturas y registros necesarios para sus funciones. Los registros de diagnóstico no se cargan automáticamente al mantenedor. La aplicación no incorpora una función propia para enviar analíticas de uso.</p>
+                  <p>Algunas funciones realizan conexiones a Microsoft/Xbox, Minecraft/Mojang, Fabric, Eclipse Adoptium, GitHub y, si habilitas la presencia enriquecida, Discord. Esos servicios pueden recibir datos técnicos de conexión, como la dirección IP, y aplican sus propias políticas. Minecraft también se comunica con sus servicios y con los servidores a los que te conectes.</p>
+                  <p>Lee la <a href="https://github.com/zNicoojk/zN-Client/blob/main/PRIVACY.md" target="_blank" rel="noopener noreferrer">declaración de privacidad completa del launcher</a> para conocer el detalle de cuentas, archivos locales y servicios utilizados.</p>
+                </div>
+              </details>
+              <details class="legal-item">
+                <summary>4. Cuentas y autenticación</summary>
+                <div class="legal-item-content">
+                  <p>El inicio de sesión de Microsoft se procesa mediante el flujo de autenticación de Microsoft. El launcher no almacena tu contraseña. Si decides guardar una cuenta, almacena el token de renovación cifrado mediante el almacenamiento seguro de Windows; los tokens de acceso se mantienen en la sesión activa. Microsoft procesa los datos de cuenta conforme a sus propios términos y avisos.</p>
+                  <p>Los perfiles locales guardan el nombre elegido y un identificador local; no autentican una cuenta Microsoft. Solo funcionan en servidores configurados para aceptar jugadores sin autenticación premium.</p>
+                </div>
+              </details>
+              <details class="legal-item">
+                <summary>5. Datos locales y seguridad</summary>
+                <div class="legal-item-content">
+                  <p>Los datos del launcher se guardan en el dispositivo y no se envían automáticamente al mantenedor. Desinstalar la aplicación puede no eliminar esos datos. Puedes quitar cuentas desde el launcher y borrar manualmente sus archivos locales si ya no deseas conservarlos.</p>
+                  <p>Ningún método de almacenamiento o transmisión garantiza seguridad absoluta. Mantén Windows actualizado y evita compartir registros, archivos de datos, tokens o capturas que puedan contener información personal.</p>
+                </div>
+              </details>
+              <details class="legal-item">
+                <summary>6. Tus opciones</summary>
+                <div class="legal-item-content">
+                  <p>Puedes controlar desde tu navegador la carga de recursos externos y las cookies que establezcan terceros; si bloqueas recursos, la tipografía puede verse diferente. También puedes optar por no utilizar la autenticación Microsoft, no habilitar la integración opcional de Discord y eliminar los datos locales del launcher.</p>
+                </div>
+              </details>
+              <details class="legal-item">
+                <summary>7. Contacto y cambios</summary>
+                <div class="legal-item-content">
+                  <p>Para consultas sobre privacidad, abre una <a href="https://github.com/zNicoojk/zN-Client/issues" target="_blank" rel="noopener noreferrer">incidencia en GitHub</a>. No incluyas contraseñas, tokens ni otros datos privados en una incidencia pública.</p>
+                  <p>Esta política puede cambiar si se modifica el sitio o el tratamiento de datos del launcher. La fecha indicada refleja la revisión publicada.</p>
+                </div>
+              </details>
+            </div>
+          </section>
+        </section>
+
         <section class="closing-cta" aria-label="Descargar zN Client">
           <div class="closing-mark"><img src="./assets/znclient.png" alt=""></div>
           <div>
@@ -280,8 +437,8 @@
         <p class="disclaimer">
           zN Client es un proyecto independiente y no está afiliado, aprobado ni patrocinado por Mojang Studios o Microsoft.
           Necesitas Minecraft: Java Edition para jugar en servidores premium y Realms.
-          <a href="./terms.html">Términos y condiciones</a>
-          <a href="./privacy.html">Privacidad</a>
+          <a href="#terms">Términos y condiciones</a>
+          <a href="#privacy">Privacidad</a>
         </p>
       </main>
 
@@ -292,8 +449,8 @@
         </a>
         <span class="footer-copy">Un proyecto independiente, hecho para jugar.</span>
         <nav class="footer-links" aria-label="Enlaces legales y soporte">
-          <a href="./terms.html">Términos</a>
-          <a href="./privacy.html">Privacidad</a>
+          <a href="#terms">Términos</a>
+          <a href="#privacy">Privacidad</a>
           <a id="support-link-footer" href="#" target="_blank" rel="noopener noreferrer">Soporte</a>
           <a class="footer-link" id="footer-github-link" href="#" target="_blank" rel="noopener noreferrer">Releases <span aria-hidden="true">↗</span></a>
         </nav>
