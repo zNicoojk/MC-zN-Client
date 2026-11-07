@@ -43,6 +43,8 @@ La contraseña de Microsoft no se almacena. Si eliges guardar una cuenta, su tok
 
 Consulta la [política de privacidad](https://github.com/zNicoojk/zN-Client/blob/main/PRIVACY.md) y el [código fuente del launcher](https://github.com/zNicoojk/zN-Client).
 
+La web tiene además su propia [política de privacidad](./site/privacy.html), que explica las conexiones a GitHub y Google Fonts al visitar la página. Los [términos y condiciones](./site/terms.html) describen el uso del sitio y enlazan a la licencia aplicable al software.
+
 ## Descargas y actualizaciones
 
 El sitio consulta las Releases públicas de [`zNicoojk/zN-Client`](https://github.com/zNicoojk/zN-Client/releases) y muestra el instalador `.exe` de la última versión estable. Los borradores y las versiones preliminares no aparecen como la última versión. El launcher también puede avisar de nuevas versiones publicadas en GitHub.
@@ -54,6 +56,8 @@ Para publicar una actualización del launcher, sigue las instrucciones del [repo
 El sitio se aloja desde este repositorio con GitHub Pages. En **Settings → Pages**, selecciona **GitHub Actions** como origen. El workflow de `.github/workflows/deploy-pages.yml` publica los archivos de `site/` al subir cambios a `main` o `master`; los nuevos instaladores se obtienen directamente de las Releases del repositorio del cliente.
 
 Las versiones y sus instaladores se actualizan desde GitHub Releases. Para cambiar los textos, las funciones descritas o el diseño de la página, edita los archivos de `site/` en este repositorio y sube los cambios a `main`; GitHub Actions publicará la nueva página automáticamente.
+
+La página incluye una guía de instalación, preguntas frecuentes y documentos separados para [términos](./site/terms.html) y [privacidad de la web](./site/privacy.html). El soporte se ofrece mediante GitHub Issues; no publiques contraseñas, tokens ni registros sin revisarlos antes.
 
 ## Sobre el proyecto
 

@@ -13,10 +13,10 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Space+Grotesk:wght@400;500;600;700&display=swap">
-    <link rel="stylesheet" href="./styles.css?v=2">
+    <link rel="stylesheet" href="./styles.css?v=3">
     <link rel="icon" type="image/png" href="./assets/znclient.png">
     <script src="./repo-config.js"></script>
-    <script src="./app.js?v=2" defer></script>
+    <script src="./app.js?v=3" defer></script>
   </head>
   <body>
     <div class="ambient ambient-one" aria-hidden="true"></div>
@@ -31,6 +31,7 @@
           <a href="#features">Funciones</a>
           <a href="#compatibility">Compatibilidad</a>
           <a href="#downloads">Descargas</a>
+          <a href="#help">Ayuda</a>
           <a class="source-link" id="github-link" href="#" target="_blank" rel="noopener noreferrer">
             <svg class="github-mark" viewBox="0 0 24 24" aria-hidden="true">
               <path fill="currentColor" d="M12 .5C5.65.5.5 5.75.5 12.22c0 5.18 3.29 9.57 7.86 11.12.58.11.79-.26.79-.57v-2.02c-3.2.71-3.88-1.38-3.88-1.38-.53-1.35-1.3-1.71-1.3-1.71-1.07-.75.08-.74.08-.74 1.18.09 1.8 1.24 1.8 1.24 1.05 1.84 2.75 1.31 3.42 1 .11-.78.41-1.31.75-1.61-2.55-.3-5.24-1.3-5.24-5.81 0-1.28.45-2.32 1.18-3.14-.12-.3-.51-1.52.11-3.17 0 0 .96-.31 3.15 1.2.91-.26 1.89-.4 2.87-.4s1.96.14 2.87.4c2.19-1.51 3.15-1.2 3.15-1.2.62 1.65.23 2.87.11 3.17.73.82 1.18 1.86 1.18 3.14 0 4.52-2.69 5.51-5.25 5.8.41.36.78 1.08.78 2.18v3.23c0 .31.21.69.8.57 4.56-1.55 7.85-5.94 7.85-11.12C23.5 5.75 18.35.5 12 .5Z"/>
@@ -181,6 +182,34 @@
           </div>
         </section>
 
+        <section class="install-section" id="install" aria-labelledby="install-title">
+          <div class="section-intro">
+            <div>
+              <p class="section-kicker">GUÍA RÁPIDA</p>
+              <h2 id="install-title">Instálalo en unos pasos.</h2>
+            </div>
+            <p>Necesitas Windows 10 u 11 de 64 bits. Para servidores premium y Realms, necesitas una cuenta con Minecraft: Java Edition.</p>
+          </div>
+          <ol class="install-grid">
+            <li class="install-card">
+              <span class="install-number">01</span>
+              <h3>Descarga desde aquí</h3>
+              <p>Usa el botón de descarga de esta página. El instalador se entrega desde la Release pública de GitHub.</p>
+            </li>
+            <li class="install-card">
+              <span class="install-number">02</span>
+              <h3>Abre el instalador</h3>
+              <p>Confirma que descargaste el archivo publicado en el repositorio oficial del proyecto y sigue las indicaciones de Windows.</p>
+            </li>
+            <li class="install-card">
+              <span class="install-number">03</span>
+              <h3>Configura y juega</h3>
+              <p>Inicia sesión con Microsoft o crea un perfil local, elige una versión disponible y pulsa «Jugar».</p>
+            </li>
+          </ol>
+          <p class="install-note">Windows puede mostrar avisos al ejecutar aplicaciones descargadas de Internet. No los ignores automáticamente: verifica el origen del archivo y decide si quieres continuar.</p>
+        </section>
+
         <section class="update-section" aria-labelledby="update-title">
           <div class="update-heading">
             <p class="section-kicker">SIEMPRE AL DÍA</p>
@@ -203,6 +232,42 @@
           </div>
         </section>
 
+        <section class="faq-section" id="help" aria-labelledby="faq-title">
+          <div class="section-intro">
+            <div>
+              <p class="section-kicker">CENTRO DE AYUDA</p>
+              <h2 id="faq-title">Preguntas frecuentes.</h2>
+            </div>
+            <p>¿No encuentras la respuesta? <a class="inline-link" id="support-link" href="#" target="_blank" rel="noopener noreferrer">Pide ayuda en GitHub Issues ↗</a></p>
+          </div>
+          <div class="faq-list">
+            <details class="faq-item">
+              <summary>¿Qué necesito para jugar?</summary>
+              <p>zN Client está diseñado para Windows 10/11 de 64 bits. Para autenticación oficial, servidores premium y Realms, necesitas una cuenta Microsoft con Minecraft: Java Edition. Los perfiles locales solo funcionan en servidores que permiten jugadores sin autenticación premium.</p>
+            </details>
+            <details class="faq-item">
+              <summary>¿Cómo se actualizan las descargas?</summary>
+              <p>La página consulta las Releases públicas del repositorio del launcher y muestra el instalador .exe de la Release estable más reciente. Los borradores y las versiones preliminares se omiten. Las notas y todos los archivos de cada Release se abren en GitHub.</p>
+            </details>
+            <details class="faq-item">
+              <summary>¿Se guardan mis credenciales de Microsoft?</summary>
+              <p>La contraseña no se guarda en el launcher. Si eliges recordar una cuenta, el token de renovación se cifra con el almacenamiento seguro de Windows. Consulta la <a class="inline-link" href="./privacy.html">política de privacidad</a> para más detalles y servicios de terceros.</p>
+            </details>
+            <details class="faq-item">
+              <summary>¿Puedo usar cualquier mod externo?</summary>
+              <p>El launcher permite administrar mods externos, pero no garantiza que todos sean compatibles entre sí ni con cada versión. Revisa la versión y los requisitos de cada mod; algunos pueden causar errores o afectar el rendimiento.</p>
+            </details>
+            <details class="faq-item">
+              <summary>¿zN Client está afiliado a Mojang o Microsoft?</summary>
+              <p>No. Es un proyecto independiente, no afiliado, aprobado ni patrocinado por Mojang Studios o Microsoft. Minecraft es una marca de Mojang Studios.</p>
+            </details>
+            <details class="faq-item">
+              <summary>¿Dónde reporto un problema de instalación o del juego?</summary>
+              <p>Abre una consulta en GitHub Issues e incluye los pasos para reproducir el problema y los registros relevantes. Antes de adjuntarlos, revísalos y elimina tokens, nombres de usuario u otra información privada. Nunca publiques contraseñas ni tokens.</p>
+            </details>
+          </div>
+        </section>
+
         <section class="closing-cta" aria-label="Descargar zN Client">
           <div class="closing-mark"><img src="./assets/znclient.png" alt=""></div>
           <div>
@@ -215,7 +280,8 @@
         <p class="disclaimer">
           zN Client es un proyecto independiente y no está afiliado, aprobado ni patrocinado por Mojang Studios o Microsoft.
           Necesitas Minecraft: Java Edition para jugar en servidores premium y Realms.
-          <a id="privacy-link" href="#" target="_blank" rel="noopener noreferrer">Privacidad y código fuente</a>
+          <a href="./terms.html">Términos y condiciones</a>
+          <a href="./privacy.html">Privacidad</a>
         </p>
       </main>
 
@@ -225,7 +291,12 @@
           <span>zN<span class="brand-light">CLIENT</span></span>
         </a>
         <span class="footer-copy">Un proyecto independiente, hecho para jugar.</span>
-        <a class="footer-link" id="footer-github-link" href="#" target="_blank" rel="noopener noreferrer">GitHub Releases <span aria-hidden="true">↗</span></a>
+        <nav class="footer-links" aria-label="Enlaces legales y soporte">
+          <a href="./terms.html">Términos</a>
+          <a href="./privacy.html">Privacidad</a>
+          <a id="support-link-footer" href="#" target="_blank" rel="noopener noreferrer">Soporte</a>
+          <a class="footer-link" id="footer-github-link" href="#" target="_blank" rel="noopener noreferrer">Releases <span aria-hidden="true">↗</span></a>
+        </nav>
       </footer>
     </div>
   </body>

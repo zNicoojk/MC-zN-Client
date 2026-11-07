@@ -8,7 +8,8 @@
   const githubLink = document.querySelector("#github-link");
   const footerGithubLink = document.querySelector("#footer-github-link");
   const allReleasesLink = document.querySelector("#all-releases-link");
-  const privacyLink = document.querySelector("#privacy-link");
+  const supportLink = document.querySelector("#support-link");
+  const supportLinkFooter = document.querySelector("#support-link-footer");
 
   const setBusy = (busy) => releaseCard.setAttribute("aria-busy", String(busy));
 
@@ -61,7 +62,8 @@
   githubLink.href = repositoryUrl;
   footerGithubLink.href = `${repositoryUrl}/releases`;
   allReleasesLink.href = `${repositoryUrl}/releases`;
-  privacyLink.href = `${repositoryUrl}/blob/main/PRIVACY.md`;
+  supportLink.href = `${repositoryUrl}/issues`;
+  supportLinkFooter.href = `${repositoryUrl}/issues`;
 
   function loadRelease() {
     setBusy(true);
