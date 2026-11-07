@@ -1,0 +1,1 @@
+window.ZNCLIENT_REPO = "";

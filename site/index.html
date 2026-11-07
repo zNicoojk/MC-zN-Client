@@ -1,0 +1,79 @@
+<!doctype html>
+<html lang="es">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="theme-color" content="#090d18">
+    <meta name="description" content="Descarga la versión más reciente de ZNClient.">
+    <title>ZNClient — Descargas</title>
+    <link rel="stylesheet" href="./styles.css">
+    <script src="./repo-config.js"></script>
+    <script src="./app.js" defer></script>
+  </head>
+  <body>
+    <div class="page-shell">
+      <header class="topbar">
+        <a class="brand" href="#" aria-label="ZNClient, inicio">
+          <span class="brand-mark" aria-hidden="true">ZN</span>
+          <span>ZN<span class="brand-light">CLIENT</span></span>
+        </a>
+        <a class="github-link" id="github-link" href="#" target="_blank" rel="noreferrer">
+          Ver en GitHub <span aria-hidden="true">↗</span>
+        </a>
+      </header>
+
+      <main>
+        <section class="hero" aria-labelledby="hero-title">
+          <div class="eyebrow"><span class="status-dot"></span> CENTRO DE DESCARGAS</div>
+          <h1 id="hero-title">Tu próxima versión,<br><span>siempre a mano.</span></h1>
+          <p class="hero-copy">
+            Descarga ZNClient desde aquí. Cuando publiques una nueva versión en GitHub,
+            aparecerá automáticamente en esta página.
+          </p>
+
+          <article class="release-card" aria-live="polite">
+            <div class="release-heading">
+              <div>
+                <p class="card-label">VERSIÓN MÁS RECIENTE</p>
+                <h2 id="latest-version">Buscando versión...</h2>
+              </div>
+              <span class="latest-badge">LATEST</span>
+            </div>
+            <p class="release-date" id="release-date"></p>
+            <div class="download-area" id="download-area">
+              <span class="loader" aria-hidden="true"></span>
+              <span>Conectando con GitHub...</span>
+            </div>
+            <a class="release-notes" id="release-notes" href="#" target="_blank" rel="noreferrer" hidden>
+              Ver notas de esta versión <span aria-hidden="true">→</span>
+            </a>
+          </article>
+          <p class="auto-note"><span aria-hidden="true">↻</span> Actualizaciones sincronizadas con GitHub Releases</p>
+        </section>
+
+        <section class="how-it-works" aria-label="Cómo funciona">
+          <div class="step">
+            <span class="step-number">01</span>
+            <div><h3>Publica en GitHub</h3><p>Crea una Release y adjunta los archivos instalables de tu versión.</p></div>
+          </div>
+          <div class="step">
+            <span class="step-number">02</span>
+            <div><h3>Se actualiza sola</h3><p>La página consulta las publicaciones de GitHub y muestra la última versión.</p></div>
+          </div>
+          <div class="step">
+            <span class="step-number">03</span>
+            <div><h3>Descarga y listo</h3><p>Tus usuarios descargan los archivos directamente desde GitHub.</p></div>
+          </div>
+        </section>
+      </main>
+
+      <footer>
+        <a class="brand footer-brand" href="#" aria-label="ZNClient, inicio">
+          <span class="brand-mark" aria-hidden="true">ZN</span>
+          <span>ZN<span class="brand-light">CLIENT</span></span>
+        </a>
+        <span>Desarrollado con <a id="footer-github-link" href="#" target="_blank" rel="noreferrer">GitHub Releases</a></span>
+      </footer>
+    </div>
+  </body>
+</html>
